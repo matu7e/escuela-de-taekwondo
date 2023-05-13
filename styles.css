@@ -1,48 +1,68 @@
-
 body, html{
     margin: 0;
     padding: 0;
     background-color: rgb(0, 0, 0);
     font-family: 'Alegreya SC', serif;
 }
-
+.titulo{
+    text-align: center;
+    align-items: center;
+    font-size: 60px;
+    color: rgb(252, 255, 60);  
+    margin: 20px;
+    border-bottom: 1px solid white ;
+    cursor: pointer;
+}
 nav ul{
-    
     margin: 0;
     display: grid;
     grid-template-columns: repeat(3, 0.1fr);
     justify-content: center;
-    gap: 100px;
-    background-color: black;
-    
-
+    gap: 10px;
+    padding: 0;
 }
 nav ul li{
     margin: 30px;
     list-style: none;
-    
 }
 nav ul li a{
     text-decoration: none;
-    color: rgb(255, 255, 255);
+    color: rgb(255, 255, 255); 
+}
+nav ul li a:hover{
+    color: rgb(252, 255, 60);
+     
+}
+.article-1{
     
+    
+    margin: 50px;
+    display: grid;
+    grid-template-columns: repeat(2, 0.3fr);
+    justify-content: center;
+    gap: 10px;
 }
-.img-nav{
-    width: 100%;
-    height: 300px;
-    margin-bottom: -10px;
-
+.img_descripcion{
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    cursor: pointer;
 }
-
-
+.text{
+    color: white;
+    font-size: 18px;
+    margin: 25px;
+    width: 600px;
+}
+.conteiner{
+    margin: 30px;
+}
 .text_instructor{
     text-align:center;
     align-items:center;
     font-size: 40px;
     color: white;
-
 }
-
 .instructor{
     height: 400px;
     display: grid;
@@ -53,11 +73,11 @@ nav ul li a{
     align-items: center;
     
 }
-
 .instructor img{
     width: 400px;
     height: 400px;
     margin: auto;
+    cursor: pointer;
 }
 .instructor_p{
     color: white;
@@ -81,159 +101,369 @@ nav ul li a{
     transition: box-shadow 0.3s ease-in-out;
     
     
-  }
-  
+}  
 #whatsapp-btn:hover {
     cursor: pointer;
     background-color: darkgreen;
     box-shadow: 0 0 0 2px white inset;
     padding: 15px 70px;
     font-size: 20px;
-}
-  
+} 
 .conteiner_wpp{
     text-align: center;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-.color{
-    width: 100%;
-    height: 400px;
-    background-color: rgba(0, 0, 0, 0.763);
-    margin-top: 15px;
-}
-
-
-.cinto_blanco {
+.button-blanco{
+    cursor: pointer;
+    border: none;
     background-color: rgb(255, 255, 255);
-} 
-.cinto_amarillo {
-    background-color: yellow;
-} 
-.cinto_verde {
-    background-color: rgb(38, 144, 62);
-}
-.cinto_azul {
-    background-color: rgb(11, 17, 202);
-}
-.cinto_rojo {
-    background-color: rgb(131, 35, 35);
-}
-
-
-.descripcion_amarillo, .descripcion_verde, .descripcion_azul, .descripcion_rojo, .descripcion_blanco{
-    display: none;
-}
-.cinto_blanco:hover ~ .descripcion_container_blanco .descripcion_blanco {
-    display: block;
-}
-.cinto_amarillo:hover ~ .descripcion_container_amarillo .descripcion_amarillo {
-    display: block;
-}
-.cinto_verde:hover ~ .descripcion_container_verde .descripcion_verde {
-    display: block;
-}
-.cinto_azul:hover ~ .descripcion_container_azul .descripcion_azul {
-    display: block;
-}
-.cinto_rojo:hover ~ .descripcion_container_rojo .descripcion_rojo {
-    display: block;
-    
-}
-
-  
-p{
-    color: white;
-}
-
-
-.cinto {
+    font-size: 25px;
+    justify-content: center;
     width: 100%;
     height: 60px;
-    margin-top: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-} 
-
-.title-cinto {
+    color: rgb(0, 0, 0);
+}
+.contenedor-descripcion-blanco {
+    color: rgb(255, 255, 255);
+    padding: 0;
+    text-align: justify;
+    margin: 0 50px;
+    display: none; 
+}
+.button-amarillo{
+    cursor: pointer;
+    border: none;
+    background-color: rgb(213, 244, 40);
     font-size: 25px;
-    margin: 30px 0;
     justify-content: center;
-}
-
-.desc{
-    margin: 0px 50px;
-}
-
-.text{
-    color: white;
-    font-size: 18px;
-    margin: 25px;
-    width: 600px;
-}
-.article-1{
-    
-    height: 300px;
-    margin: 50px;
-    display: grid;
-    grid-template-columns: repeat(2, 0.3fr);
-    justify-content: center;
-    gap: 10px;
-}
-
-
-.img_descripcion{
-    width: 200px;
-    height: 200px;
-    margin: auto;
-}
-.portada{
-    margin: 0 10px ;
-    text-align: center;
-}
-.img_portada{
     width: 100%;
-    height: 500px;
-    opacity: 0.7;
-
-}
-
-.frase{
+    height: 60px;
     color: white;
-    margin-bottom: 110;
-    font-family: serif;
-    font-size: 40px;
 }
-
-
-
-/* Estilos para el footer */
-.footer {
-    background-color: #000000;
-    padding: 40px;
-    text-align: center;
-    
-} 
-  /* Estilos para el texto del footer */
-.footer p {
+.contenedor-descripcion-amarillo {
+    padding: 0;
+    color: rgb(255, 255, 255);
+    text-align: justify;
+    margin: 0 50px;
+    display: none; 
+}
+.button-verde{
+    cursor: pointer;
+    border: none;
+    background-color: rgb(30, 169, 25);
+    font-size: 25px;
+    justify-content: center;
+    width: 100%;
+    height: 60px;
+    color: white;
+}
+.contenedor-descripcion-verde {
+    padding: 0;
+    color: rgb(255, 255, 255);
+    text-align: justify;
+    margin: 0 50px;
+    display: none; 
+}
+.button-azul{
+    cursor: pointer;
+    border: none;
+    background-color: rgb(11, 17, 202);
+    font-size: 25px;
+    justify-content: center;
+    width: 100%;
+    height: 60px;
+    color: white;
+}
+.contenedor-descripcion-azul {
+    padding: 0;
+    color: rgb(255, 255, 255);
+    text-align: justify;
+    margin: 0 50px;
+    display: none; 
+}
+.button-rojo{
+    cursor: pointer;
+    border: none;
+    background-color: rgb(183, 37, 37);
+    font-size: 25px;
+    justify-content: center;
+    width: 100%;
+    height: 60px;
+    color: white;
+}
+.contenedor-descripcion-rojo {
+    padding: 0;
+    color: rgb(255, 255, 255);
+    text-align: justify;
+    margin: 0 50px;
+    display: none; 
+}
+.button-negro{
+    cursor: pointer;
+    border: none;
+    background-color: rgb(0, 0, 0);
+    font-size: 25px;
+    justify-content: center;
+    width: 100%;
+    height: 60px;
+    color: white;
+    border-bottom: 1px solid white;
+}
+.contenedor-descripcion-negro {
+    color: rgb(255, 255, 255);
+    padding: 0;
+    text-align: justify;
+    margin: 0 50px;
+    display: none; 
+}
+.contenedor-descripcion-blanco.mostrar {
+    display: block; 
+}
+.contenedor-descripcion-amarillo.mostrar {
+    display: block; 
+}
+.contenedor-descripcion-verde.mostrar {
+    display: block; 
+}
+.contenedor-descripcion-azul.mostrar {
+    display: block; 
+}
+.contenedor-descripcion-rojo.mostrar {
+    display: block; 
+}
+.contenedor-descripcion-negro.mostrar {
+    display: block; 
+}
+.parrafo{
     margin: 0;
-    font-size: 14px;
-    color: #ffffff;
+    font-size: 18px;
+    padding: 30px 100px;
     
 }
-
 .section_cinto{
     padding:  0 0 50px 0;
     margin-bottom: 50px;
+}
+.frase {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3vw;
+    margin: 0;
+    height: 30vh;
+    color: white;
+    margin-top: -150px;
+}
+.conteiner_img{
+    text-align: center;
+}
+.patada2 {
+    max-width: 100%;
+    height: auto;
+    cursor: pointer;
+    margin: 0 auto;
+    display: none;
+
+}
+.footer {
+    padding: 40px;
+    max-width: 100%;
+    text-align: center;
+    font-size: 1rem;
+    padding: 1rem;
+    
+    
+} 
+.footer p {   
+    color: #ffffff;
+}
+.enlase{
+}
+.enlase {
+  display: inline-block;
+  background-color: #272c27;
+  color: white;
+  padding: 5px 10px;
+  text-decoration: none;
+  border: none;
+  margin: 5px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+.enlase:hover {
+  background-color: #939393;
+}
+
+@media (max-width: 1000px){
+        .titulo{
+        font-size: 40px;
+    }
+    nav ul{
+        gap: 5px;   
+    }
+    nav ul li{
+        margin: 15px;       
+    }    
+    .img_descripcion{
+        width: 150px;
+        height: 150px;
+    } 
+    .article-1{
+        height: 0;
+    }
+    .text{
+        font-size: 12px;
+        margin: 25px;
+        width: 300px;
+    }
+    .conteiner{
+        margin-top: 150px;
+    }
+    .text_instructor{ 
+        font-size: 25px;    
+    }
+    .instructor img{
+        width: 350px;
+        height: 350px;
+    }
+    .instructor_p{
+        font-size: 12px;        
+        width: 350px; 
+        margin-top: -150px;
+        margin-bottom: 30px;
+    
+
+    }
+    .instructor{
+        height: 400px;        
+    }
+    
+}
+@media (max-width: 800px){
+    .instructor img{
+        width: 350px;
+        height: 350px;
+    }
+    .instructor{
+        margin-top: 200PX;
+        grid-template-columns: repeat(1, 0fr);
+        gap: 0;
+        
+        
+    }
+    .patada{
+        display: none;
+    }
+    .instructor_p{
+        font-size: 12px;        
+        width: 350px; 
+        margin: auto;
+        margin-bottom: 30px;
+        margin-top: 30px;
+
+    }
+    .instructor{
+        height: 400px;        
+    }
+    .footer {
+        max-width: 80%;
+        margin: 0 auto;
+    }
+}
+@media (max-width: 660px){
+    .article-1{
+        height: 0;
+        grid-template-columns: repeat(1, 0.3fr);
+    }
+    .img_descripcion{
+        width: 100px;
+        height: 100px;
+    }
+    .text{
+        font-size: 9px;
+        margin: 25px;
+        width: 300px;
+    }
+    .text_instructor{ 
+        font-size: 20px;    
+    }
+    .contenedor-descripcion-negro .contenedor-descripcion-rojo .contenedor-descripcion-azul .contenedor-descripcion-verde .contenedor-descripcion-amarillo .contenedor-descripcion-blanco{
+        margin: 0 20px;
+    }
+    .parrafo{
+        padding: 30px 20px;
+        font-size: 10px;
+    }
+    .button-negro .button-rojo .button-azul .button-verde .button-amarillo .button-blanco{
+        font-size: 15px;
+        height: 30px;
+
+    }
+    
+    
+}
+@media (max-width: 410px){
+    .titulo{
+        font-size: 25px;
+    }
+    nav ul{
+        gap: 3px;   
+    }
+    nav ul li{
+        margin: 5px;       
+    }
+    .article-1{
+        height: 0;
+        grid-template-columns: repeat(1, 0.3fr);
+    }    
+    .img_descripcion{
+        width: 50px;
+        height: 50px;
+    }
+    .conteiner {
+        margin-top: 230px;
+    }
+    .text{
+        font-size: 7px;
+        margin: 10px;
+        width: 150px;
+    }
+    .text_instructor{ 
+        font-size: 15px;    
+    }
+    .instructor img{
+        display: none;
+    }
+    .instructor{
+        margin: 0; 
+        height: 0;
+        grid-template-columns: repeat(1, 0fr);
+        gap: 0;
+        
+        
+    }
+    .instructor_p{
+        font-size: 7px;        
+        width: 200px; 
+        margin: auto;
+        margin-bottom: 30px;
+
+    }
+    .instructor{
+        height: 70px;     
+           
+    }
+    .frase{
+        height: 0;
+        margin-top: -50px;
+    }
+    .patada2{
+        display: block;
+        width: 200px;
+        margin: 15px auto;
+    }
+    .button-negro .button-rojo .button-azul .button-verde .button-amarillo .button-blanco{
+        font-size: 10px;
+        height: 30px;
+    }
 }
